@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/searchFragments">
+    <fragment
+        android:id="@+id/searchFragments"
+        tools:layout="@layout/fragment_search"
+        android:name="com.example.githubuserkotlin.fragments.SearchFragments"
+        android:label="SearchFragments" >
+        <action
+            android:id="@+id/action_searchFragments_to_recentFragments"
+            app:destination="@id/recentFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/recentFragments"
+        tools:layout="@layout/fragment_recent"
+        android:name="com.example.githubuserkotlin.fragments.RecentFragments"
+        android:label="RecentFragments" />
+</navigation>
